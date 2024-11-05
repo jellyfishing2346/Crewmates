@@ -1,0 +1,89 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: #1a237e;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.crewmate-form, .crewmate-list {
+  background-color: #1a237e;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.crewmate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.crewmate-card {
+  background-color: #3f51b5;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.crewmate-card.impostor {
+  background-color: #b71c1c;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px; /* Increased margin for all buttons */
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.attribute-selection button.selected {
+  background-color: #ff9800;
+}
+
+/* New styles for button spacing */
+
+.crewmate-form button, .crewmate-list button {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  /* or use 'justify-content: space-around;' for equal spacing */
+}
+
+.attribute-selection button {
+  margin: 0 10px 10px 0; /* Right and bottom margin */
+}
+
+/* Add space only between adjacent buttons */
+button + button {
+  margin-left: 15px;
+}
